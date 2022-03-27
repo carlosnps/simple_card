@@ -1,4 +1,4 @@
-uuid: c77c5592-7527-4aed-bea3-45f682f0e105
+uuid: 1ecf11a8-f419-4bfe-b0de-087dcc95f163
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_exhibit_dates
     - node.type.simple_card
   module:
-    - datetime
+    - datetime_range
 id: node.simple_card.field_exhibit_dates
 field_name: field_exhibit_dates
 entity_type: node
@@ -18,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: daterange

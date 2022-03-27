@@ -4,14 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.simple_card.body
-    - field.field.node.simple_card.field_card_image
-    - field.field.node.simple_card.field_description_
+    - field.field.node.simple_card.field_card_media
     - field.field.node.simple_card.field_exhibit_dates
     - field.field.node.simple_card.field_library_name
     - node.type.simple_card
   module:
-    - datetime
-    - image
+    - datetime_range
     - text
     - user
 id: node.simple_card.default
@@ -24,44 +22,38 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 5
     region: content
-  field_card_image:
-    type: image
-    label: above
+  field_card_media:
+    type: entity_reference_entity_view
+    label: hidden
     settings:
-      image_link: ''
-      image_style: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 105
-    region: content
-  field_description_:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 104
+    weight: 4
     region: content
   field_exhibit_dates:
-    type: datetime_default
-    label: above
+    type: daterange_default
+    label: hidden
     settings:
       timezone_override: ''
       format_type: medium
+      separator: '-'
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
   field_library_name:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden: {  }

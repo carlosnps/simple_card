@@ -1,17 +1,18 @@
-uuid: 639d4127-d923-49c8-ae66-95793ee1bd36
+uuid: 83c5666a-d3cf-4700-9201-29f9fb7dfb21
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
+    - datetime_range
     - node
 id: node.field_exhibit_dates
 field_name: field_exhibit_dates
 entity_type: node
-type: datetime
+type: daterange
 settings:
   datetime_type: date
-module: datetime
+  optional_end_date: true
+module: datetime_range
 locked: false
 cardinality: 1
 translatable: true

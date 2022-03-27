@@ -5,8 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.simple_card.body
-    - field.field.node.simple_card.field_card_image
-    - field.field.node.simple_card.field_description_
+    - field.field.node.simple_card.field_card_media
     - field.field.node.simple_card.field_exhibit_dates
     - field.field.node.simple_card.field_library_name
     - node.type.simple_card
@@ -32,7 +31,6 @@ content:
     weight: 100
     region: content
 hidden:
-  field_card_image: true
-  field_description_: true
+  field_card_media: true
   field_exhibit_dates: true
   field_library_name: true

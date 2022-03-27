@@ -1,0 +1,29 @@
+uuid: 41f86e9f-bca2-4b8e-8a33-4822210b982a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_card_media
+    - media.type.image
+    - node.type.simple_card
+id: node.simple_card.field_card_media
+field_name: field_card_media
+entity_type: node
+bundle: simple_card
+label: 'Card Media'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
