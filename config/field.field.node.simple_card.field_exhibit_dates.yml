@@ -1,0 +1,21 @@
+uuid: c77c5592-7527-4aed-bea3-45f682f0e105
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exhibit_dates
+    - node.type.simple_card
+  module:
+    - datetime
+id: node.simple_card.field_exhibit_dates
+field_name: field_exhibit_dates
+entity_type: node
+bundle: simple_card
+label: 'Exhibit dates'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

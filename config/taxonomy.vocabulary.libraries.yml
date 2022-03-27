@@ -1,0 +1,8 @@
+uuid: 14f78bec-b618-41c7-a23d-e8efbae52152
+langcode: en
+status: true
+dependencies: {  }
+name: Libraries
+vid: libraries
+description: 'NYPL Names'
+weight: 0

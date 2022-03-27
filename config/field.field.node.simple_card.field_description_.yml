@@ -1,0 +1,19 @@
+uuid: 1800c9dd-cd4c-4f9c-91e9-e69b353243bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_
+    - node.type.simple_card
+id: node.simple_card.field_description_
+field_name: field_description_
+entity_type: node
+bundle: simple_card
+label: 'Description '
+description: 'Enter up to 5 lines of text'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

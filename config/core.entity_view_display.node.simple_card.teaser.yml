@@ -1,0 +1,38 @@
+uuid: fb0c855d-d0b4-4b65-bb2a-3b0ace117072
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.simple_card.body
+    - field.field.node.simple_card.field_card_image
+    - field.field.node.simple_card.field_description_
+    - field.field.node.simple_card.field_exhibit_dates
+    - field.field.node.simple_card.field_library_name
+    - node.type.simple_card
+  module:
+    - text
+    - user
+id: node.simple_card.teaser
+targetEntityType: node
+bundle: simple_card
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_card_image: true
+  field_description_: true
+  field_exhibit_dates: true
+  field_library_name: true

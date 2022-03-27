@@ -1,0 +1,21 @@
+uuid: 0110cf34-0a49-4e1c-af4f-7194936b2c3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_borough
+    - taxonomy.vocabulary.libraries
+  module:
+    - options
+id: taxonomy_term.libraries.field_borough
+field_name: field_borough
+entity_type: taxonomy_term
+bundle: libraries
+label: Borough
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

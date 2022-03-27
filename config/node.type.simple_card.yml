@@ -1,0 +1,18 @@
+uuid: e1fefed0-e2e2-4c94-b254-0c23a54651ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Simple Card'
+type: simple_card
+description: 'Simple Card Component'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

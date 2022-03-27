@@ -1,0 +1,30 @@
+uuid: 5d247cfa-0743-44f9-9042-5cea73950e2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.libraries.field_borough
+    - taxonomy.vocabulary.libraries
+  module:
+    - options
+    - text
+id: taxonomy_term.libraries.default
+targetEntityType: taxonomy_term
+bundle: libraries
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_borough:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

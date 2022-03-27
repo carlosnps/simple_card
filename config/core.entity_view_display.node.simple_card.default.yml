@@ -1,0 +1,67 @@
+uuid: bcfbfd68-04e7-4ade-bd1a-f975014cb9f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.simple_card.body
+    - field.field.node.simple_card.field_card_image
+    - field.field.node.simple_card.field_description_
+    - field.field.node.simple_card.field_exhibit_dates
+    - field.field.node.simple_card.field_library_name
+    - node.type.simple_card
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.simple_card.default
+targetEntityType: node
+bundle: simple_card
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_card_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_description_:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_exhibit_dates:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_library_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

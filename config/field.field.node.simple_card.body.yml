@@ -1,0 +1,23 @@
+uuid: ec360b22-607a-4cd4-9860-645eb7d86b6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.simple_card
+  module:
+    - text
+id: node.simple_card.body
+field_name: body
+entity_type: node
+bundle: simple_card
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
