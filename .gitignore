@@ -48,15 +48,10 @@ Thumbs.db
 # Files and folders
 modules/contrib/**/.git
 vendor/**/.git
-sites/default/files
 
 # Composer scaffolding files #
 ##############################
 .drush-lock-update
 .gitattributes
-example.gitignore
-INSTALL.txt
-README.txt
 sites/default/local.services.yml
 sites/default/default.settings.php
-/web/web.config
