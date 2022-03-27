@@ -1,0 +1,62 @@
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+
+# Note that services.local.yml is not loaded by default. If you would like
+# to use this file add the following to your settings.local.php file:
+#   $settings['container_yamls'][] = __DIR__ . '/services.local.yml';
+sites/*/services.local.yml
+
+# ** Only works in OSs that support newer versions of fnmatch (Bash 4+)
+sites/default/**/files
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# Things in the core directory that Drupal 8 commits in the repository.
+!core/**/*.gz
+
+# Files and folders
+modules/contrib/**/.git
+vendor/**/.git
+sites/default/files
+
+# Composer scaffolding files #
+##############################
+.drush-lock-update
+.gitattributes
+example.gitignore
+INSTALL.txt
+README.txt
+sites/default/local.services.yml
+sites/default/default.settings.php
+/web/web.config
