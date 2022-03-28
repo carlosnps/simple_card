@@ -69,11 +69,11 @@
  */
 #}
   <div{{ content_attributes }}>
-      {{ node.label }}
+      <br> {{ node.label }} </br>
       <br> {{ dates }} </br>
       <br> {{ node.field_library_name.entity.name.value }} </br>
       <br> {{ content.body }} </br>
-      {{ node.field_card_media.entity.field_media_image.alt }}
+      <br>{{ node.field_card_media.entity.field_media_image.alt }}</br>
       {{ drupal_entity('media', node.field_card_media.target_id ) }}
 
   </div>
