@@ -1,0 +1,22 @@
+uuid: 298ddea2-3503-41da-872b-d5f181d5371b
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - card_theme
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: card_theme_help
+theme: card_theme
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

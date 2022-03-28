@@ -1,0 +1,5 @@
+name: 'Simple Card Custom Functions'
+type: module
+description: 'Add Customizations to the Simple Card Node Entity'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

@@ -1,0 +1,38 @@
+<?php
+
+use Drupal\Core\Datetime\DrupalDateTime;
+
+function simplecard_form_alter(&$form, &$form_state, $form_id) {
+  $formid = $form['form_id']['#value'];
+  if ($form_id == 'node_simple_card_form' || $formid == 'node_simple_card_edit_form') {
+    $form['#validate'][] = '_validate_dates';
+  }
+}
+
+function _validate_dates($form, &$form_state) {
+  $dates = $form_state->getValue('field_exhibit_dates');
+  $date_ary = array('value' , 'end_value');
+  foreach ($date_ary as $indx) {
+    $sdate = $dates[0][$indx]->getPhpDateTime();
+    $date_num =  $sdate->format('w');
+    switch ($date_num) {
+      case '6':
+        $weekday = 'Saturday';
+        break;
+      case '0':
+        $weekday = 'Sunday';
+        break;
+      default:
+        $weekday = 'ok';
+        break;
+    }
+    if ($weekday != 'ok') {
+      if ($indx == 'value') {
+        $msg = 'Start';
+      } else {
+        $msg = 'End';
+      }
+      $form_state->setErrorByName('field_exhibit_dates' , t("$msg date cannot be a $weekday"));
+    }
+  }
+}

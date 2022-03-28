@@ -1,0 +1,23 @@
+<?php
+
+function card_theme_preprocess_node__simple_card(&$vars) {
+  if (($vars['node']->getType() == 'simple_card')) {
+
+    $elements = $vars['elements'];
+    if (isset($elements['#node'])) {
+      $node = $elements['#node'];
+      $rstart = $node->get('field_exhibit_dates')->value;
+      $today = date('Y-m-d');
+      $today = strtotime($today);
+      $start = strtotime($rstart);
+      if ($today >= $start) {
+         $vars['dates'] = t("Now");
+      } else {
+        $vars['dates'] = $rstart;
+      }
+      $ends = strtotime($node->get('field_exhibit_dates')->end_value);
+      $ends = date('F d,Y' , $ends);
+      $vars['dates'] = $vars['dates'] . '-' . $ends;
+    }
+  }
+}

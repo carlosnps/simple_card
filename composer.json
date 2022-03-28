@@ -1,13 +1,8 @@
 {
-    "name": "drupal/legacy-project",
+    "name": "drupal/simple_card-project",
     "description": "Project template for Drupal 9 projects with composer following drupal/drupal layout",
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://www.drupal.org/project/drupal",
-    "support": {
-        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
-        "chat": "https://www.drupal.org/node/314178"
-    },
     "repositories": [
         {
             "type": "composer",
@@ -20,7 +15,11 @@
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/core-vendor-hardening": "^9.3",
-        "drupal/optional_end_date": "^1.2"
+        "drupal/devel": "^4.1",
+        "drupal/devel_php": "^1.0",
+        "drupal/optional_end_date": "^1.2",
+        "drupal/twig_tweak": "^3.1",
+        "drush/drush": "^10"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -69,27 +68,6 @@
             ],
             "themes/custom/{$name}": [
                 "type:drupal-custom-theme"
-            ]
-        },
-        "drupal-core-project-message": {
-            "include-keys": [
-                "homepage",
-                "support"
-            ],
-            "post-create-project-cmd-message": [
-                "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
-                "<bg=blue;fg=white>  from the drupal/legacy-project template!               </>",
-                "<bg=blue;fg=white>                                                         </>",
-                "",
-                "<bg=yellow;fg=black>Next steps</>:",
-                "  * Install the site: https://www.drupal.org/docs/8/install",
-                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-                "  * Get support: https://www.drupal.org/support",
-                "  * Get involved with the Drupal community:",
-                "      https://www.drupal.org/getting-involved",
-                "  * Remove the plugin that prints this message:",
-                "      composer remove drupal/core-project-message"
             ]
         }
     }

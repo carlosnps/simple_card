@@ -1,0 +1,10 @@
+name: Simple Card Theme
+type: theme
+description: Simple Card custom theme.
+base theme: stable9
+core: 8.x
+core_version_requirement: ^8 || ^9
+regions:
+  header: Header
+  content: Content
+  footer: Footer

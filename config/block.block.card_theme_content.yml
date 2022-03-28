@@ -1,0 +1,22 @@
+uuid: 70185eb5-b9cb-477b-8e6a-1b792aa8a7dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - card_theme
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: card_theme_content
+theme: card_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

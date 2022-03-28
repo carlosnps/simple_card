@@ -1,0 +1,22 @@
+uuid: d12bbe22-3010-4cb2-b497-e180ce836ed9
+langcode: en
+status: false
+dependencies:
+  theme:
+    - card_theme
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: card_theme_local_tasks
+theme: card_theme
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
