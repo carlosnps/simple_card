@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'b2bf2d02563ca2a7dcee28f8687c98188deae4ce',
+        'reference' => '3b3eb8491b6cd2fc5a34b7d1a2e54c0c8440ab38',
         'name' => 'drupal/simple_card-project',
         'dev' => true,
     ),
@@ -871,7 +871,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'b2bf2d02563ca2a7dcee28f8687c98188deae4ce',
+            'reference' => '3b3eb8491b6cd2fc5a34b7d1a2e54c0c8440ab38',
             'dev_requirement' => false,
         ),
         'drupal/standard' => array(
