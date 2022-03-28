@@ -17,10 +17,10 @@ This is a smaple coding example
 ## Configs
   * created /config folder with the entire configuration
   * should the DB not be copied
-  ** run drush config-import
-  ** create Libraries terms with Library locations
-  ** create media images
-  ** create simple_card node entities
+    * run drush config-import
+    * create Libraries terms with Library locations
+    * create media images
+    * create simple_card node entities
   * drupal config:export:single --name=node.type.signle_card
 
 ## files
@@ -28,8 +28,7 @@ This is a smaple coding example
   * mysql DB has 4 media images
   * In a production environment I would have had an install hook that loaded the media images
   * included the 4 jpgs in Repo
-  ** Dec._2 Final E2....jpg for node/1
-  ** hymn crop_0.jpg for for node/2
-  ** IMG_9614 (2)_0.jpeg for node/3
-  ** CE_2.jpg for node/4
-  
+    * Dec._2 Final E2....jpg for node/1
+    * hymn crop_0.jpg for for node/2
+    * IMG_9614 (2)_0.jpeg for node/3
+    * CE_2.jpg for node/4
